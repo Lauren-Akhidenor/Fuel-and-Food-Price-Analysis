@@ -154,10 +154,38 @@ The dataset is fully reproducible and organised into:
 
 
 
-## Visualisation: 
+## Visualisation
 
 
+## 📊 Dashboard Visualisations
 
+The following Power BI dashboards illustrate the relationship between fuel price shocks and food inflation dynamics in the UK.
+
+---
+
+### 🔹 Overview
+![Overview](Screenshot%20(1024).png)
+
+---
+
+### 🔹 Consumer Price Index for Food
+![Food CPI](Screenshot%20(1030).png)
+
+
+### 🔹 Dynamic Response and Timing
+![Dynamic Response and Timing](Screenshot%20(1027).png)
+
+---
+
+### 🔹 Sensitivity Analysis 
+![Sensitivity Heatmap](Screenshot%20(1028).png)
+
+---
+
+### 🔹 Adaptation and Adjustment
+![Adaptation and Adjustment](Screenshot%20(1029).png)
+
+---
 
 
 
