@@ -4,16 +4,16 @@
 
 ## Table of Contents
 
-- [Project Overview](#-project-overview)
-- [Research Question](#-research-question)
-- [Objectives](#-objectives)
+- [ Project Overview](#-project-overview)
+- [ Research Question](#-research-question)
+- [ Objectives](#-objectives)
 - [📁 Datasets](#-datasets)
-- [Methodology Pipeline](#️-methodology-pipeline)
-- [Tools & Workflow](#-tools--workflow)
-- [Dashboard Visualisations](#-dashboard-visualisations)
+- [ Methodology Pipeline](#️-methodology-pipeline)
+- [ Tools & Workflow](#-tools--workflow)
+- [ Dashboard Visualisations](#-dashboard-visualisations)
 - [📈 Model Results Summary](#-model-results-summary)
 - [🔍 Key Findings](#-key-findings)
-- [Economic Interpretation](#-economic-interpretation)
+- [ Economic Interpretation](#-economic-interpretation)
 - [📌 Author](#-author)
 
 ---
