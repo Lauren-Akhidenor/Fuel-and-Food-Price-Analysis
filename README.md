@@ -4,32 +4,33 @@
 
 ## Table of Contents
 
-- [ Project Overview](#-project-overview)
-- [ Research Question](#-research-question)
-- [ Objectives](#-objectives)
-- [📁 Datasets](#-datasets)
-- [ Methodology Pipeline](#️-methodology-pipeline)
-- [ Tools & Workflow](#-tools--workflow)
-- [ Dashboard Visualisations](#-dashboard-visualisations)
-- [📈 Model Results Summary](#-model-results-summary)
-- [🔍 Key Findings](#-key-findings)
-- [ Economic Interpretation](#-economic-interpretation)
-- [📌 Author](#-author)
+- [Project Overview](#project-overview)
+- [Research Question](#research-question)
+- [Objectives](#objectives)
+- [Datasets](#datasets)
+- [Methodology Pipeline](#methodology-pipeline)
+- [Tools & Workflow](#tools--workflow)
+- [Dashboard Visualisations](#dashboard-visualisations)
+- [Model Results](#model-results)
+- [Key Findings](#key-findings)
+- [Policy Implications](#policy-implications)
+- [Economic Interpretation](#economic-interpretation)
+- [Author](#author)
 
 ---
 
 ## Project Overview
 
-This project investigates how fuel price shocks transmit into UK food inflation and household consumption behaviour using econometric time-series modelling and data visualisation.
+This project examines how fuel price shocks transmit into UK food inflation using time-series econometric modelling and data visualisation.
 
-It combines economic theory, statistical modelling, and data analytics to quantify:
+The analysis combines economic theory with empirical modelling to quantify:
 
-- Transmission timing (lag effects)
-- Magnitude of impact (elasticities & pass-through)
-- Heterogeneity across food categories
-- Consumer demand responses
+- Transmission delays (lag structure)
+- Magnitude of fuel-to-food price pass-through
+- Structural relationships across macroeconomic variables
+- Consumer demand response under inflationary pressure
 
-The project is implemented using Python, Excel, and Power BI, forming an end-to-end analytical pipeline from raw data to interactive dashboards.
+The workflow integrates Python-based econometric analysis with Power BI dashboards to translate statistical results into policy-relevant insights.
 
 ---
 
@@ -37,92 +38,92 @@ The project is implemented using Python, Excel, and Power BI, forming an end-to-
 
 > How do fuel price shocks affect food prices and household demand in the United Kingdom?
 
-### Sub-questions:
-- How long after fuel price increases do food prices respond?
+### Sub-questions
+- What is the lag between fuel price shocks and food inflation responses?
 - How strong is the transmission effect?
-- Which food categories are most affected?
-- How do households adjust consumption behaviour?
+- Which food categories are most sensitive?
+- How do households adjust consumption under price shocks?
 
 ---
 
 ## Objectives
 
-- Model lagged transmission of fuel prices into UK food CPI  
-- Identify timing and peak response of inflation effects  
-- Measure fuel price pass-through intensity  
+- Estimate lagged transmission from fuel prices to food CPI  
+- Identify short-run and long-run inflation dynamics  
+- Measure pass-through intensity across fuel types  
 - Analyse heterogeneity across food categories  
-- Estimate demand elasticity under price shocks  
+- Estimate demand elasticities under inflationary conditions  
 - Test long-run equilibrium relationships between fuel and food prices  
 
 ---
 
-## 📁 Datasets
+## Datasets
 
-### Primary Dataset (Time-Series Data)
-
-Monthly UK macroeconomic data including:
+### 1. Macroeconomic Time-Series Dataset
+Monthly UK data including:
 - Fuel prices (ULSP, ULSD, Brent Crude)
 - Food CPI and sub-indices
-- Macroeconomic variables (income, exchange rates)
+- Income and exchange rates
 
-File: `Full dataset for Food and fuel price analysis(Sheet1).csv`
+📁 `Full dataset for Food and fuel price analysis(Sheet1).csv`
 
 ---
 
-### Econometric Output Dataset
-
-Model outputs used for analysis and visualisation:
-- VAR / VECM estimates  
+### 2. Econometric Output Dataset
+Model-generated outputs used for interpretation:
+- VAR/VECM estimates  
 - Impulse Response Functions (IRFs)  
 - Elasticity estimates  
-- Residual diagnostics  
+- Diagnostic statistics  
 
-File: `IMPACT OF FUEL SHOCK ON FOOD PRICE ANALYSIS RESULT.xlsx`
+📁 `IMPACT OF FUEL SHOCK ON FOOD PRICE ANALYSIS RESULT.xlsx`
 
 ---
 
 ## Methodology Pipeline
 
-### 1. Exploratory Data Analysis
-- Pearson correlation matrix  
-- Cross-Correlation Function (CCF)  
-- Lag identification (0–12 months)
+### 1. Exploratory Analysis
+- Correlation analysis  
+- Cross-correlation functions (CCF)  
+- Lag structure identification (0–12 months)
 
+---
 
+### 2. Time-Series Diagnostics
+- Stationarity testing (ADF)  
+- Cointegration testing (Johansen)
 
-### 2. Time Series Diagnostics
-- Augmented Dickey-Fuller (ADF) test  
-- Johansen cointegration test  
+---
 
+### 3. Model Selection Strategy
+- Optimal lag selection using AIC/BIC  
+- Structural specification of VAR system  
 
-
-### 3. Model Specification
-- AIC / BIC lag selection  
-- Optimal VAR/VECM structure  
-
-
+---
 
 ### 4. Econometric Modelling
 
 **VAR (Vector Autoregression)**  
-Captures dynamic interactions between:
+Used for capturing short-run dynamic interactions between:
 - Fuel prices (ULSP, ULSD)
 - Food CPI
-- Income and exchange rates  
+- Macroeconomic controls (income, exchange rate)
 
 **VECM (Vector Error Correction Model)**  
-Captures:
+Estimated after confirming cointegration to capture:
 - Long-run equilibrium relationships  
-- Short-run adjustments  
+- Short-run adjustment dynamics  
 
+> **Model justification:** Johansen cointegration results indicated at least one cointegrating relationship, making VECM the appropriate specification rather than VAR in levels.
 
+---
 
 ### 5. Sensitivity Analysis
 - Log-log elasticity estimation  
-- ULSP vs ULSD comparison  
-- Food category response analysis  
+- Fuel type comparison (ULSP vs ULSD)  
+- Food category response differences  
 
-
+---
 
 ### 6. Demand Estimation
 - Log-linear OLS regression  
@@ -132,7 +133,7 @@ Captures:
 
 ## Tools & Workflow
 
-CSV / Excel → Python (Econometrics & Statistical Analysis) → Power BI (Interactive Dashboards)
+CSV / Excel → Python (Econometrics & Statistical Modelling) → Power BI (Dashboards & Visualisation)
 
 ---
 
@@ -155,35 +156,48 @@ CSV / Excel → Python (Econometrics & Statistical Analysis) → Power BI (Inter
 
 ---
 
-## 📈 Model Results Summary
+## Model Results
 
-| Model | Key Result |
-|------|-------------|
-| Cross-Correlation (CCF) | Peak lag at 6–9 months |
-| Granger Causality | Fuel → Food CPI (significant) |
-| VAR Model | Strong dynamic interdependence |
-| VECM | Long-run equilibrium confirmed |
-| OLS Demand Model | Elasticity ≈ -0.19 |
-| Sensitivity Analysis | Fish, bread most sensitive |
+> ⚠️ These results summarise previously estimated econometric outputs. Full statistical output is documented in the analysis Excel file.
+
+| Test / Model | Key Result |
+|--------------|------------|
+| ADF Test | Variables non-stationary in levels, stationary in first differences |
+| Johansen Cointegration | At least one cointegrating relationship detected |
+| VAR Lag Selection | Optimal lag selected using AIC/BIC (see appendix file) |
+| Granger Causality | Fuel prices Granger-cause food CPI |
+| VECM | Significant error correction term confirming long-run adjustment |
+| IRF Analysis | Peak response observed at ~6–9 month horizon |
+| Demand Model | Price elasticity of food demand ≈ -0.19 |
 
 ---
 
-## 🔍 Key Findings
+## Key Findings
 
 - Fuel price shocks affect food prices with a 6–9 month lag  
-- Diesel (ULSD) has stronger transmission than petrol (ULSP)  
-- Fish, bread, and vegetables are most sensitive categories  
-- Food demand decreases as prices rise (negative elasticity)  
-- Strong long-run cointegration exists between fuel and food inflation  
-- Fuel prices are a strong predictor of food inflation  
+- Diesel (ULSD) has a stronger transmission effect than petrol (ULSP)  
+- Fish, bread, and vegetables are the most sensitive food categories  
+- Food demand falls in response to price increases (inelastic response)  
+- A long-run equilibrium relationship exists between fuel and food prices  
+- Fuel prices are a leading indicator of food inflation  
+
+---
+
+## Policy Implications
+
+- Diesel prices should be monitored as an early warning indicator of food inflation  
+- Temporary targeted subsidies may stabilise high-sensitivity food categories (e.g., bread, fish)  
+- Fuel cost smoothing policies could reduce inflation volatility in food markets  
+- Energy price shocks should be integrated into food security forecasting models  
 
 ---
 
 ## Economic Interpretation
 
-Fuel price increases raise production and transportation costs, leading to delayed but persistent food inflation. Diesel prices have a stronger effect due to freight dependency. Households respond by reducing consumption and switching to cheaper alternatives during inflationary periods.
+Fuel price increases raise transportation and production costs across the food supply chain. This leads to delayed but persistent increases in food prices, particularly in logistics-intensive categories such as fish and bakery products. Household consumption adjusts downward due to negative demand elasticity, amplifying welfare impacts during inflationary periods.
 
 ---
 
+## Author
 
-✍️ *Lauren Akhidenor*
+✍️ Lauren Akhidenor
