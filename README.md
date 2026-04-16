@@ -152,8 +152,7 @@ CSV / Excel → Python (Econometrics & Statistical Modelling) → Power BI (Dash
 ![Sensitivity](Screenshot%20(1028).png)
 
 ### Adjustment Behaviour
-![Adjustment](Screenshot%20(1030).png)
-
+![Adjustment](4B216B8C-1932-468A-8B63-46BDD25B5568.png)
 ---
 
 ## Model Results
