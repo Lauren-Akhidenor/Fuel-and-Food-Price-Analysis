@@ -1,4 +1,4 @@
-# The Impact of Fuel Price Shocks on Food Inflation in the United Kingdom
+# How Fuel Prices Drive Food Inflation in the United Kingdom
 
 ---
 
