@@ -1,4 +1,4 @@
-# How Fuel Prices Drive Food Inflation in the United Kingdom
+# The Fuel Lag Effect: A Time-Series Analysis of UK Food Inflation Drivers
 
 ---
 
