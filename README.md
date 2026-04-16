@@ -1,4 +1,4 @@
-# 🌍 The Fuel Lag Effect: A Time-Series Analysis of UK Food Inflation Drivers
+# The Fuel Lag Effect: A Time-Series Analysis of UK Food Inflation Drivers
 
 ---
 
