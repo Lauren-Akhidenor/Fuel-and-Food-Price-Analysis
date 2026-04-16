@@ -1,8 +1,8 @@
-# The Fuel Lag Effect: A Time-Series Analysis of UK Food Inflation Drivers
+# 🌍 The Fuel Lag Effect: A Time-Series Analysis of UK Food Inflation Drivers
 
 ---
 
-## Table of Contents
+## 🔎 Table of Contents
 
 - [Project Overview](#project-overview)
 - [Research Question](#research-question)
@@ -200,4 +200,5 @@ Fuel price increases raise transportation and production costs across the food s
 
 ## Author
 
-✍️ Lauren Akhidenor
+**Lauren Akhidenor**
+
